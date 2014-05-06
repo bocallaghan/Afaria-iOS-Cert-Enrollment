@@ -517,6 +517,7 @@
 				6D92F80E1919244300D330D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6D92F80F1919244300D330D6 /* Build configuration list for PBXNativeTarget "Afaria-Cert-EnrollerTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +526,7 @@
 				6D92F8111919244300D330D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
