@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "AfariaController.h"
 
 @implementation AppDelegate
 
@@ -41,6 +42,22 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+/*
+ * Standard handler for callback URLs to our app.
+ * Good practice here to do some checking on the formatting for security purposes
+ * and make sure nobody is using the app for other reasons.
+ */
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    // If we have a valid URL in the response.
+    if (url != nil)
+	{
+        // Pass off the handling to the dedicated AfariaController library.
+        [AfariaController handleAfariaCallbackWithURL:url];
+    }
+    return YES;
 }
 
 @end

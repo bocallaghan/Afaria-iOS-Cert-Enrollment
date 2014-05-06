@@ -10,4 +10,13 @@
 
 @interface ViewController : UIViewController
 
+// Initialise the library from the button press.
+- (IBAction)initialiseAfariaLibrary:(id)sender;
+
+// Request a certificate from the button press.
+- (IBAction)requestCertificate:(id)sender;
+
+// Get the current status of the Afaria library.
+- (IBAction)getCurrentStatus:(id)sender;
+
 @end

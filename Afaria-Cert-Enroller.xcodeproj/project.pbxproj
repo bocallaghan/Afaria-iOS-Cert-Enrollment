@@ -21,6 +21,12 @@
 		6D92F7FF1919244300D330D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D92F7E11919244300D330D6 /* UIKit.framework */; };
 		6D92F8071919244300D330D6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6D92F8051919244300D330D6 /* InfoPlist.strings */; };
 		6D92F8091919244300D330D6 /* Afaria_Cert_EnrollerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D92F8081919244300D330D6 /* Afaria_Cert_EnrollerTests.m */; };
+		6D92F8141919246B00D330D6 /* AfariaController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D92F8131919246B00D330D6 /* AfariaController.m */; };
+		6D92F8191919276100D330D6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D92F8181919276100D330D6 /* Security.framework */; };
+		6D92F81B1919277200D330D6 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D92F81A1919277200D330D6 /* CFNetwork.framework */; };
+		6D92F81F1919278C00D330D6 /* libAfariaSLL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D92F81C1919278C00D330D6 /* libAfariaSLL.a */; };
+		6D92F8201919278C00D330D6 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D92F81D1919278C00D330D6 /* libcrypto.a */; };
+		6D92F8211919278C00D330D6 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D92F81E1919278C00D330D6 /* libssl.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,14 @@
 		6D92F8041919244300D330D6 /* Afaria-Cert-EnrollerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Afaria-Cert-EnrollerTests-Info.plist"; sourceTree = "<group>"; };
 		6D92F8061919244300D330D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6D92F8081919244300D330D6 /* Afaria_Cert_EnrollerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Afaria_Cert_EnrollerTests.m; sourceTree = "<group>"; };
+		6D92F8121919246B00D330D6 /* AfariaController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AfariaController.h; path = "Afaria-Cert-Enroller/AfariaController/AfariaController.h"; sourceTree = "<group>"; };
+		6D92F8131919246B00D330D6 /* AfariaController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AfariaController.m; path = "Afaria-Cert-Enroller/AfariaController/AfariaController.m"; sourceTree = "<group>"; };
+		6D92F8171919274400D330D6 /* SeedDataAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SeedDataAPI.h; path = ../../../../Frameworks/Afaria7/ios/SeedDataAPI.h; sourceTree = "<group>"; };
+		6D92F8181919276100D330D6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		6D92F81A1919277200D330D6 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		6D92F81C1919278C00D330D6 /* libAfariaSLL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAfariaSLL.a; path = "../../../../Frameworks/Afaria7/ios/Debug-iphoneos/libAfariaSLL.a"; sourceTree = "<group>"; };
+		6D92F81D1919278C00D330D6 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "../../../../Frameworks/Afaria7/ios/Debug-iphoneos/libcrypto.a"; sourceTree = "<group>"; };
+		6D92F81E1919278C00D330D6 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = "../../../../Frameworks/Afaria7/ios/Debug-iphoneos/libssl.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +74,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D92F81F1919278C00D330D6 /* libAfariaSLL.a in Frameworks */,
+				6D92F8201919278C00D330D6 /* libcrypto.a in Frameworks */,
+				6D92F8211919278C00D330D6 /* libssl.a in Frameworks */,
+				6D92F81B1919277200D330D6 /* CFNetwork.framework in Frameworks */,
+				6D92F8191919276100D330D6 /* Security.framework in Frameworks */,
 				6D92F7E01919244300D330D6 /* CoreGraphics.framework in Frameworks */,
 				6D92F7E21919244300D330D6 /* UIKit.framework in Frameworks */,
 				6D92F7DE1919244300D330D6 /* Foundation.framework in Frameworks */,
@@ -101,6 +120,11 @@
 		6D92F7DC1919244300D330D6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6D92F81C1919278C00D330D6 /* libAfariaSLL.a */,
+				6D92F81D1919278C00D330D6 /* libcrypto.a */,
+				6D92F81E1919278C00D330D6 /* libssl.a */,
+				6D92F81A1919277200D330D6 /* CFNetwork.framework */,
+				6D92F8181919276100D330D6 /* Security.framework */,
 				6D92F7DD1919244300D330D6 /* Foundation.framework */,
 				6D92F7DF1919244300D330D6 /* CoreGraphics.framework */,
 				6D92F7E11919244300D330D6 /* UIKit.framework */,
@@ -112,6 +136,7 @@
 		6D92F7E31919244300D330D6 /* Afaria-Cert-Enroller */ = {
 			isa = PBXGroup;
 			children = (
+				6D92F8151919263900D330D6 /* AfariaController */,
 				6D92F7EC1919244300D330D6 /* AppDelegate.h */,
 				6D92F7ED1919244300D330D6 /* AppDelegate.m */,
 				6D92F7EF1919244300D330D6 /* Main.storyboard */,
@@ -150,6 +175,25 @@
 				6D92F8051919244300D330D6 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6D92F8151919263900D330D6 /* AfariaController */ = {
+			isa = PBXGroup;
+			children = (
+				6D92F8161919273000D330D6 /* SAP Afaria Files */,
+				6D92F8121919246B00D330D6 /* AfariaController.h */,
+				6D92F8131919246B00D330D6 /* AfariaController.m */,
+			);
+			name = AfariaController;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		6D92F8161919273000D330D6 /* SAP Afaria Files */ = {
+			isa = PBXGroup;
+			children = (
+				6D92F8171919274400D330D6 /* SeedDataAPI.h */,
+			);
+			name = "SAP Afaria Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +243,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Bluefin Solutions Ltd.";
 				TargetAttributes = {
+					6D92F7D91919244300D330D6 = {
+						DevelopmentTeam = UEVXJB828N;
+					};
 					6D92F7FA1919244300D330D6 = {
 						TestTargetID = 6D92F7D91919244300D330D6;
 					};
@@ -250,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D92F7F41919244300D330D6 /* ViewController.m in Sources */,
+				6D92F8141919246B00D330D6 /* AfariaController.m in Sources */,
 				6D92F7EE1919244300D330D6 /* AppDelegate.m in Sources */,
 				6D92F7EA1919244300D330D6 /* main.m in Sources */,
 			);
@@ -376,10 +424,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Afaria-Cert-Enroller/Afaria-Cert-Enroller-Prefix.pch";
 				INFOPLIST_FILE = "Afaria-Cert-Enroller/Afaria-Cert-Enroller-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/bocallaghan/Frameworks/Afaria7/ios/Debug$(EFFECTIVE_PLATFORM_NAME)",
+				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -389,10 +444,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Afaria-Cert-Enroller/Afaria-Cert-Enroller-Prefix.pch";
 				INFOPLIST_FILE = "Afaria-Cert-Enroller/Afaria-Cert-Enroller-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/bocallaghan/Frameworks/Afaria7/ios/Debug$(EFFECTIVE_PLATFORM_NAME)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
