@@ -430,7 +430,7 @@
 				INFOPLIST_FILE = "Afaria-Cert-Enroller/Afaria-Cert-Enroller-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/bocallaghan/Frameworks/Afaria7/ios/Debug$(EFFECTIVE_PLATFORM_NAME)",
+					"/Volumes/MyPassport/Frameworks/SAP/Afaria7/ios/Debug$(EFFECTIVE_PLATFORM_NAME)",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -450,7 +450,7 @@
 				INFOPLIST_FILE = "Afaria-Cert-Enroller/Afaria-Cert-Enroller-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/bocallaghan/Frameworks/Afaria7/ios/Debug$(EFFECTIVE_PLATFORM_NAME)",
+					"/Volumes/MyPassport/Frameworks/SAP/Afaria7/ios/Debug$(EFFECTIVE_PLATFORM_NAME)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALID_ARCHS = armv7;

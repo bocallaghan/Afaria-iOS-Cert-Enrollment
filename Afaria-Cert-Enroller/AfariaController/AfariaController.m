@@ -42,6 +42,8 @@ static int afariaClientStatus = kAfariaRegistration_NotReady;
 // Called from the App Delegate URL handler
 + (int)handleAfariaCallbackWithURL:(NSURL *)url{
     
+    NSLog(@"The URL is %@", url);
+    
     // Re-initialise the Afaria library with the Afaria URL as provided by the Afaria app on the device.
     int value = [SeedingAPISynchronous initializeLibrary:url inUrlScheme:urlScheme forceSigning:NO withBundleID:bundleID];
     
